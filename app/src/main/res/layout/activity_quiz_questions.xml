@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuizQuestions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+    <TextView
+        android:id="@+id/tvQues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="22sp"
+        android:textColor="@color/colorQuestion"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Q.1 What kind of wizard is Lucy in Fairy Tail?"
+        />
+
+        <ImageView
+            android:id="@+id/tvImg"
+            android:layout_width="match_parent"
+            android:layout_height="215dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/lucy" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:max="10"
+        android:minHeight="50dp"
+        android:progress="0"
+        android:indeterminate="false"
+        style="?android:attr/progressBarStyleHorizontal"
+        />
+    <TextView
+        android:id="@+id/progressBarr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColorHint="#7A8089"
+        tools:text="0/4"
+        />
+    </LinearLayout>
+
+        <TextView
+        android:id="@+id/tvOptionOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/default_option_border_bg"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="#7A8089"
+        android:textSize="18sp"
+        tools:text="Ice Wizard"
+        />
+
+        <TextView
+            android:id="@+id/tvOptionTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            tools:text="Fire Wizard" />
+
+        <TextView
+            android:id="@+id/tvOptionThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            tools:text="Celestial Wizard"
+            />
+        <TextView
+            android:id="@+id/tvOptionFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            tools:text="Dark Wizard"
+            />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:layout_margin="8dp"
+            android:background="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+</ScrollView>
